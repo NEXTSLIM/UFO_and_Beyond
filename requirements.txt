@@ -2,13 +2,11 @@ Flask==1.1.2
 Flask-PyMongo==2.3.0
 Flask-SQLAlchemy==2.5.1
 geojson==2.5.0
-gmaps==0.9.0
 gunicorn==20.1.0
 Jinja2==2.11.2
 json5==0.9.5
 jupyter==1.0.0
 jupyterlab==2.2.6
-numba==0.51.2
 opencage==1.2.2
 psycopg2==2.8.6
 psycopg2-binary==2.8.6
