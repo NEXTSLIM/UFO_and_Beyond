@@ -1,1 +1,1 @@
-web: gunicorn pet_pals.app:app
+web: gunicorn UFO_and_Beyond.app:app
