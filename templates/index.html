@@ -2,23 +2,388 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Test For Flask Connect</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Dashboard - UFO AND BEYOND</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+
+<!-- Vendor javascript Files -->
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.js"></script>
+<script src="//d3js.org/d3.v3.min.js"></script>
+<script src="//d3js.org/d3.geo.projection.v0.min.js"></script>
+
+<!-- OTHERS javascript Files -->
+<script src='assets/map/main2.js'></script>
+
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.js"></script>
+<script src="//d3js.org/d3.v3.min.js"></script>
+<script src="//d3js.org/d3.geo.projection.v0.min.js"></script>
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
+  integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+  crossorigin=""/>
+  <!-- =======================================================
+  * Name: UFO AND_BEYOND
+  * URL: https://bootstrapmade.com/maxim-free-onepage-bootstrap-theme/
+  * Author: NEXTSLIM/RENZONLY
+
+  ======================================================== -->
 </head>
 
 <body>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 jumbotron text-center">
-     </div>
-  </div>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex justify-content-between">
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
-  <script src="{{url_for('static', filename='js/app.js')}}"></script>   
+      <div class="logo">
+        <h1><a href="index.html">UFO AND_BEYOND</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
 
-  </body>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#Motivation">Motivation</a></li>
+          <li><a class="nav-link scrollto" href="#Process">Process</a></li>
+          <li><a class="nav-link scrollto " href="#Data Insights">Data Insights</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li class="dropdown"><a href="#"><span>More</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Data</a></li>
+              <li><a href="#">Python Analysis</a></li>
+              <li><a href="#">R  Analysis</a></li>
+              <li><a href="#">Tableau</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>DASHBOARD</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Dashboard</li>
+          </ol>
+        </div>
+      </div>
+    </section><!-- End Breadcrumbs Section -->
+
+    <section class="inner-page">
+      <div class="container">
+        <h3 class="text-center sidebar-top">Did You Know!</h3>
+        <p id="fact">Probably the best-known sighting of a UFO happened in Roswell, New Mexico, in 1947. In the summer
+          of 1947, a local farmer found piles of strange debris in a pasture.<br> Officials from the nearby Roswell Army
+          Air Force Base claimed the debris was simply wreckage from a crashed weather balloon.</p>
+      </div>
+    </section>
+  </main><!-- End #main -->
+
+  <body>
+       <!-- ======= MAP Section ======= -->
+       <div  class="title"></div>
+       <h1 id='pageTitle'>WORLDWIDE UFO SIGHTINGS (1st Attempt)</h1>
+       <div id="page">
+        <div class='row'> <!--row class-->
+        <div class='col-md-8'>
+          <svg id='map'></svg>
+          </div>
+        <div class='col col-lg-4'>
+          <!-- http://duspviz.mit.edu/d3-workshop/mapping-data-with-d3/ -->
+          <div id="sliderContainer">
+            <div class='row'>
+            <div class='col-10'>
+              <p>Slide to see sightings highlighted by year:</p>
+              <input id="timeslide" type="range" min="0" max="64" value="0" step="1"/><br>
+            </div>
+            <div class='col-2'>
+              <span id="range">1949</span>
+            </div>
+            </div>
+          </div>
+          <div id="stickynote">
+            <p id='currentInfo'>Please hover over a point</p>
+            <p id='currentInfoLoc'></p>
+          </div>
+        </div>
+        <hr>
+      </div> <!--end MPA1-->
+    </br>
+        <!-- Navbar Ends -->
+  
+        <!-- Page Information Begins -->
+        <!-- <div class="container"> -->
+          <!-- <div class="row"> -->
+            <div  class="title">
+              <h1 id='pageTitle'>UFO SIGHTINGS (2010-2020)</h1> <br><br>
+            </div>
+          </div>
+        </div>
+  
+        <div class="container">
+          <div class="row">
+            <div class=" introduction col-sm-12 col-md-12 col-lg-12">
+              <p>What is it about unidentified flying objects and extra-terrestrial visitors that holds such allure?
+                Surveys consistently show that about a third of all Americans think alien spaceships are real, and that as much as
+                10 percent of the population have seen such spaceships. Eyewitnesses abound, but the physical evidence is
+                flimsy.<br> As our technology improves and the race to find life on other planets, how long is it before
+                we make contact with other life forms?
+                <p>The Information below is just a years worth of reports from around the globe from 2010. Over 80,000
+                  reports have been made in just the last 100 years.</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Page Information Ends -->
+  
+        <div class="line"></div>
+  
+  
+        <!-- Pie Charts to represent the Countries and Shapes  -->
+  
+        <div class="row ufo-chart">
+          <div class="pie col-xs-12 col-lg-6 col-md-12 col-sm-12 text-center">
+            <div class="card">
+              <div class="card-header">
+                <h2 class="card-title">Shape Of UFO</h2>
+                <p class="card-info">Click To See All The Shapes Reported</p>
+                <div id="callum"></div>
+              </div>
+              <div class="card-body">
+                <div id="callum"></div>
+              </div>
+            </div>
+          </div>
+          <div class="pie col-xs-12 col-lg-6 col-md-12 col-sm-12 text-center">
+            <div class="card">
+              <div class="card-header">
+                <h2 class="card-title">Text Mapping_UFO</h2>
+                <p class="card-info">Click To See All The Shapes Reported</p>
+                <div id="shape-selector"></div>
+              </div>
+              <div class="card-body">
+                <div id="shape"></div>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Pie Charts End -->
+  
+          <div class="line"></div>
+  
+          <!-- Composite Chart Begins -->
+  
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="card ">
+                  <div class="card-header ">
+                    <h2 class="card-title text-align-center">Timeline Over A Year of Sightings In All Countries</h2>
+                    <p class="card-info">Click And Scroll On Interactive Chart</p>
+                  </div>
+                  <div class="card-body ">
+                    <div id="composite-chart"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Composite Chart Ends -->
+  
+          <div class="line"></div>
+  
+  
+      
+    
+          <!-- Stacked Barchart Ends -->
+  
+          <div class="line"></div>
+  
+          <!-- Data Table Begins -->
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="card ">
+                  <div class="card-header ">
+                    <h2 class="card-title">Table Showing Lates Ufo Sightings from NUFORC </h2>
+                    <p class="card-info">Check Out The Comment Section</p>
+                  </div>
+                  <div class="card-body table-responsive ">
+                    <table id="dc-data-table" class="table table-hover table-bordered">
+                      <thead>
+                        <tr class="header">
+                          <th>Date Time</th>
+                          <th>City</th>
+                          <th>Shape</th>
+                          <th>Comments</th>
+                        </tr>
+                      </thead>
+                    </table>
+                    <div class="row">
+                      <div class="col-sm-12 col-md-12 col-lg-12">
+                        <div id="paging">
+                          Showing <span id="begin"></span>-<span id="end"></span> of
+                          <span id="size"></span> <span id="totalsize"></span>
+                          <input id="prev" class="btn-warning active" type="button" value="Prev" />
+                          <input id="next" class="btn-warning active" type="button" value="Next" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Data Table Ends-->
+  
+          <div class="line"></div>
+  
+          <!-- World Map Begins -->
+  
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="card ">
+                  <div class="card-header ">
+                    <h2 class="card-title">World Map Showing All Reports last 10 Years(2010-2020)</h2>
+                    <p class="card-info">Click </p>
+                  </div>
+                  <div class="card-body ">
+                    <div id="map"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <!-- World Map Ends -->
+        </div>
+      </div>
+    </div>
+  
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <!-- <div class="row"> -->
+          <h1 style="text-align:center;">THANK YOU FOR VISITING OUR WEBSITE / PROJECT!</h1> <br>
+          <!-- <h1 style="text-align:center;">THANKS YOU_ <span class="typed" data-typed-items="FOR VISIT OUR WEBSITE!, FOR VISIT OUR PROJECT!, FOR YOU TIME!"></span></h1><br> -->
+          <h2 style="text-align:center;">UFOs, They Exist!</h2>
+          <!-- <div class="col-lg-3 col-md-6"> -->
+            <div class="footer-info">
+             
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>RenzOnly</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+       
+        Designed by <a href="https://github.com/NEXTSLIM/">NEXTSLIM</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+  
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+<!-- MAP D3.js -->
+<script type='text/javascript'>
+  d3.json("assets/map/world-countries.json", makeMap);
+</script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<!-- D3 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js"></script> 
+
+<!-- MAP LEAFLET JavaScript -->
+  <!-- Leaflet JavaScript -->
+  <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
+  integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+  crossorigin=""></script>
+
+<!-- API Key -->
+<script type="text/javascript" src="static/js/config.js"></script>
+<!-- Our JavaScript -->
+<script type="text/javascript" src="static/js/logic.js"></script>
+
+  <!--<div id="my_dataviz"></div> -->
+
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+
+  <!-- Leaflet JavaScript -->
+  <script src="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
+  <!-- API key -->
+  <script type="text/javascript" src="static/js/config.js"></script>
+  <!-- D3 JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.3/d3.min.js"></script>
+  <!-- Our JavaScript -->
+  <script src="{{url_for('static', filename='/js/app.js')}}"></script>
+
+
+<!--  Callum JS -->
+<script src="{{ url_for('static', filename='/static/js/callum.js') }}"></script>
+
+
+</body>
+</body>
 </html>

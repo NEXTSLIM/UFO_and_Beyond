@@ -46,10 +46,22 @@ def index():
     """Return the homepage."""
     return render_template("index.html")
 
+# Set route to render Callum
+@app.route("/pie")
+def pie():
+    """Return the homepage."""
+    return render_template("index_c.html")
+
+# Set route to render Nick
+@app.route("/map", methods=["GET"])
+def map():
+    """Return the homepage."""
+    return render_template("index_n.html")    
 
 # Set route to call Json data from MongoDB
 @app.route("/ufosightings", methods=["GET"])
 def welcome():
+
     """List all available api routes."""
    
     UFO_collection = UFO.UFOCLEAN
