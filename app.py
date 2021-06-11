@@ -79,9 +79,12 @@ def welcome():
         'text' : q['text'],
         'posted' : q['posted'],
         'city_latitude' : q['city_latitude'],
-        'city_longitude' : q['city_longitude'],
-        'date' : q['date'],
-        'time' : q['time']})
+        'city_longitude' : q['city_longitude']
+
+        # 'date' : q['date'],
+        # 'time' : q['time']
+        
+        })
     return jsonify({'result' : output})
     
 if __name__ == "__main__":

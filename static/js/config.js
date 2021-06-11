@@ -1,2 +1,4 @@
-// API key
-const API_KEY = "pk.eyJ1Ijoibmlja2t5a2xhdXNuZyIsImEiOiJja3Azc2dqcXQwNnk2Mm9wY2xrcjgycmhhIn0.tsL1GPTGkzrveVwgvP5SPw";
+// API key Leafle
+const API_KEY = "pk.eyJ1IjoicmVuem9ubHkiLCJhIjoiY2twM3NmdWh2MWpqaTJvdGE0aXMxbHExZSJ9.Yli8Vu8_bPpiAWRJ7BJ9iA"
+// Opencage Data API
+key = '448c4a73dd234f1e82934cfbb4ce1ca0'
