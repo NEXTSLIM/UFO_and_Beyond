@@ -146,8 +146,8 @@ d3.json("/ufosightings",
 
 // for loop
 //var dict = []
-//console.log(data.result)
-var d = data.result;
+// console.log(data.result)
+// var d = data.result;
 
 for (var i = 0; i < d.length; i++) {
   var sightings = d[i];
