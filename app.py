@@ -93,7 +93,7 @@ def mapd3():
 
     """List all available api routes."""
    
-    UFO_collection = UFO.ufrefined
+    UFO_collection = UFO.uforefined
 
     output = []
     for q in UFO_collection.find():

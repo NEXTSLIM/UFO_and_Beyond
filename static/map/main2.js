@@ -66,7 +66,7 @@ function makeMap(geo_data) {
         .style('stroke', 'lightblue');
 
     //////////////////////////////////////////////////// CSV Parsing
-    d3.csv("ufo-refined-1.csv", function(data) {
+    d3.json("/uforefined", function(data) {
         return {
             year: parseInt(data.datetime.substring(6)),
             city: data.city,
