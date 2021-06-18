@@ -34,7 +34,7 @@ function makeMap(geo_data) {
         .style("opacity", 0);
 
     ////////////////////////////////////////////// MAP
-    svg = d3.select("#map")
+    svg = d3.select("map")
         .attr("width", w)
         .attr("height", h)
         .style('border', '1px black solid')
@@ -66,7 +66,7 @@ function makeMap(geo_data) {
         .style('stroke', 'lightblue');
 
     //////////////////////////////////////////////////// CSV Parsing
-    d3.json("/uforefined", function(data) {
+    d3.csv("ufo-refined-1.csv", function(data) {
         return {
             year: parseInt(data.datetime.substring(6)),
             city: data.city,
