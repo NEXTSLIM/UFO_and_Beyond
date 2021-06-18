@@ -149,7 +149,7 @@ d3.json("/ufosightings",
 // console.log(data.result)
 // var d = data.result;
 
-for (var i = 0; i < d.length; i++) {
+for (var i = 0; i < data.length; i++) {
   var sightings = d[i];
   //console.log(sample);
   //   var d = data[i];
