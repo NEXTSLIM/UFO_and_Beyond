@@ -572,7 +572,7 @@ d3.json("/ufosightings",
         maxZoom: 18,
         zoomOffset: -1,
         id: "mapbox/streets-v11",
-        accessToken: "pk.eyJ1Ijoibmlja2t5a2xhdXNuZyIsImEiOiJja3Azc2dqcXQwNnk2Mm9wY2xrcjgycmhhIn0.tsL1GPTGkzrveVwgvP5SPw",
+        accessToken: API_KEY,
       }).addTo(map)
 
 
