@@ -598,7 +598,7 @@ d3.json("/ufosightings",
     for (i = 0; i < d.length; i++) {
 
       var myIcon = L.icon({
-        iconUrl: 'ufo1.png',
+        iconUrl: '../static/img/ufo1.png',
         iconSize: [30, 25],
       iconAnchor: [25, 16]
         });
