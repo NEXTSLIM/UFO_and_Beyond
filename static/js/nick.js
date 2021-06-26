@@ -562,8 +562,8 @@ d3.json("/ufosightings",
 
       d = data.result
       var map = L.map("map1", {
-        center: [15.5994, -28.6731],
-        zoom: 3
+        center: [38.9637, 35.2433],
+        zoom: 1.5
         
       });
        L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}", {
