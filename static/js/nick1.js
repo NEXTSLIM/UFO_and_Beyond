@@ -596,12 +596,6 @@ d3.json("/ufosightings",
 
       
     for (i = 0; i < d.length; i++) {
-      // AN Check for location property
-      if (d[i]) {
-      // Arron to overide any missing returns in lng lat
-        if (d[i].city_longitude && d[i].city_latitude){
-        // Arron to fix not available lat lng fixing to Alaska  
-        if (d[i].city_latitude != 'not available' & d[i].city_longitude != 'not available' & d[i].city_longitude > -60) {
 
       var myIcon = L.icon({
         iconUrl: '../static/img/ufo1.png',
@@ -670,11 +664,9 @@ d3.json("/ufosightings",
       }
 
     }
-  //extra closing  
-  }
-  } 
-}
+    
   
+    
 
     mcgLayerSupportGroup.checkIn([group1, group2,group3,group4,group5,group6,group7,group8,group9,group10,group11])
 
@@ -697,5 +689,6 @@ d3.json("/ufosightings",
         // group1.addTo(map);
         // group2.addTo(map);
         group11.addTo(map);
- 
+
+
 })
